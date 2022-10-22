@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+</head>
+<body>
+
+    <ul id="barra">
+        <li id="elem"><a href="{{url_for('inicio')}}">inicio</a></li>
+        <li id="elem"><a href="{{url_for('servicios')}}">servicios</a></li>
+        <li id="elem"><a href="{{url_for('productos')}}">productos</a></li>
+        <li><a href="{{url_for('contacto')}}">contacto</a></li>
+        
+    </ul>
+
+    <div>
+        <ul style="list-style: none">
+
+            {% if current_user.is_anonymous %}
+            <li>usuario: anonimo</li>
+            <li><a href="{{ url_for('login') }}" style="text-decoration: underline;">ir a login</a></li>
+
+            {% else %}
+
+            <li>usuario {{current_user.name}}</li>
+            <li><a href="{{ url_for('logout') }}" style="text-decoration: underline;">logout</a></li>
+
+
+            {% endif %}
+        </ul>
+        </div>
+
+
+    </div>
+    
+    {% block content %}
+
+
+
+    {% endblock %}
+
+</body>
+</html>

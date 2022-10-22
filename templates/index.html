@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} inicio {% endblock %}
+
+{% block content %}
+
+    este es el mensaje desde la pagina creada
+    <br/>
+
+    {{numero_empleados}}
+
+     <br/>
+ 
+     <a href="{{url_for('usuarios', numerousuario=9)}}">a la pagina del usuario    </a>
+
+    {% endblock %}

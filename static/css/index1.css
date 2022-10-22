@@ -1,0 +1,144 @@
+html{
+
+background-image: url('dragon4.jpg');
+background-repeat: no-repeat;
+background-size: 1366px 750px;
+
+
+}
+  
+
+nav{
+
+    margin: auto;
+    width: 1100px;
+    list-style: none;
+    border-bottom: 1px dotted #999;
+    font-size: 3em;
+    color: black;
+    border-bottom: none;
+    text-align: center;
+    padding: 15px;
+    
+
+    
+    
+
+}
+
+
+
+#elem{
+
+    float: left;
+    margin-right: 15px;
+    
+    
+    
+  
+
+
+}
+
+li a{
+
+    text-decoration:none;
+    font-size: 45px;
+    font-family:cursive;
+    
+    
+    
+
+
+}
+
+
+
+    
+a{
+
+    text-decoration: none;
+    font-size: 35px;
+    font-family:cursive;
+    text-align: center;
+    
+
+
+}
+
+a:visited{
+
+    
+    text-align: center;
+    
+}
+
+
+
+
+
+
+img{
+
+    width: 40px;
+    height: 40px;
+    
+    
+}
+
+.button{
+
+    background-color: red; 
+    color: black;
+    border-bottom:ridge;
+
+
+}
+
+
+.button1{
+    
+    
+    background-color: black; 
+    color: orange; 
+    border: 2px solid red;
+    padding: 15px;
+    float:inline-start;
+    
+    
+
+}
+
+div{
+
+    margin-left: 25px;
+    padding: 50px;
+    float: inline-start;
+
+}
+
+div a{
+
+    color: yellow;
+}
+
+header a {
+
+    color: black;
+}
+
+p{
+
+    color:red;
+
+    font-size: 25px;
+}
+
+header p{
+
+    color: red;
+
+    font-size: 40px;
+
+    
+}

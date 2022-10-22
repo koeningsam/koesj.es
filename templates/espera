@@ -1,0 +1,2 @@
+<button class="button" id="elem"><a href="{{url_for('registro')}}">Registro</a></button>
+<button class="button" id="elem"><a href="{{url_for('iniciar')}}">Iniciar sesion</a></button>

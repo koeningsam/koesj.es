@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index1.css')}}">
+</head>
+<body>
+      
+    <header>
+    <nav>
+        <button class="button" id="elem"><a href="{{url_for('inicio')}}">Inicio</a></button>
+        <button class="button" id="elem"><a href="{{url_for('links')}}">Koe sj play</a></button>
+        <button class="button" id="elem"><a href="{{url_for('links1')}}">Koe sj</a></button>
+        
+        <button class="button" id="elem"><a href="{{url_for('contactos')}}">Contactos</a></button>
+        <br/>
+        
+    </nav>
+    </header>
+    
+    
+    
+    {% block content %}
+
+
+
+    {% endblock %}
+
+
+    
+</body>
+</html>
